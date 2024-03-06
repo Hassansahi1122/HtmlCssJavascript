@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input</title>
+</head>
+<body>
+    <h1>Value</h1><!--specifies an initial value for an input -->
+    <label for="fname">First Name: </label>
+    <input type="text" name="fname" id="fname" value="Danish">
+    <br><br>
+    <label for="lname">Last Name: </label>
+    <input type="text" name="lname" id="lname" value="Ali">
+    <br><br>
+    <h1>Readonly</h1> <!--specifies an input field read only-->
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" value="danish1847" readonly><br>
+    <br><label for="password">Password</label>
+    <input type="text" name="password" id="password" value="3842iu.$">
+    <br>
+    <h1>Disable</h1> <!--Specifies an input filed should be disable-->
+    <label for="fname">First Name: </label>
+    <input type="text" name="fname" id="fname" value="Danish" disabled>
+    <br><br>
+    <label for="lname">Last Name: </label>
+    <input type="text" name="lname" id="lname" value="Ali">
+    <br><br>
+    <h1>Size</h1><!--Specifie the visible width in character of an input field          text,search,tel,url,email,password-->
+    <label for="fname">First Name: </label>
+    <input type="text" name="fname" id="fname"  >
+    <br><br>
+    <label for="password">Password: </label>
+    <input type="text" name="password" id="password"  size="4">
+    <br><br>
+     <h1>Mexlength</h1><!-- Specifies the maximumlength of the character allowed in an input filed -->
+     <label for="fname">First Name: </label>
+    <input type="text" name="fname" id="fname"  >
+    <br><br>
+    <label for="password">Password: </label>
+    <input type="text" name="password" id="password" maxlength="4">
+    <br><br>
+    <h1>Min and Max</h1><!-- Specifies the maximun and minimum value for an input field -->
+    <form action="Lecture2.html">
+    <label for="max">Enter a date before 2024-02-14 </label>
+   <input type="date" name="max" id="max" max="2024-02-13"  >
+   <br><br>
+   <label for="min"> Enter a date after 2000-05-15</label>
+   <input type="date" name="min" id="min" min="2000-05-16">
+   <br><br>
+   <label for="minmax"> Under Age</label>
+   <input type="number" name="minmax" id="minmax" min="16" max="25">
+   <input type="submit" value="Submit">
+</form>
+   <br><br>
+   <form action="Inputtagattributes.html">
+   <h1>pattern</h1><!--Specifies a regular expression that input field's value is checked against-->
+   <label for="password">Password: </label>
+    <input type="text" name="password" id="password"  size="4" pattern="[Aa-Zz]{4}[0-9]{2}[#]{2}" title="4 Letter,2 number,2 special character">
+    <input type="submit">
+</form>
+
+<br><br>
+<form action="Inputtagattributes.html">
+ <br><br><br><br>
+ <h1>Requirement</h1><!--specifies that an input field must be filled out before submitting the form-->
+ <label for="username">Username: </label>
+ <input type="text" name="username" id="usernamer" required >
+ <input type="submit">
+</form>
+<br><br><br>
+<form action="Inputtagattributes.html">
+<h1>Step</h1><!--specifies the legal number intervals for an input field  number,range,Date,Datetime-local,Month,Time,Week-->
+<label for="number">Number: </label>
+ <input type="number" name="number" id="number" step="2" >
+ <input type="submit">
+</form>
+<br><br>
+<h1>Autofocus</h1>
+<form action="Inputtagattributes.html">
+    <label for="username">Username: </label>
+    <input type="text" name="username" id="usernamer" autofocus >
+    <input type="submit">
+    </form>
+    <br><br>
+    <h1>multiple</h1>
+    <label for="file">File: </label>
+ <input type="file" name="file" id="file" multiple >
+</form>
+<h1>List</h1>
+ <input list="browsers" id="listi" name="list ">
+ <datalist id="browsers">
+<option value="Edge"></option>
+<option value="Firefox"></option>
+<option value="Chrome"></option>
+<option value="Opera"></option>
+<option value="Safari"></option>
+ </datalist>
+</body>
+</html>

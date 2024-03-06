@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+
+        .table1,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 10px;
+           
+        }
+        .th1{
+            background: #f2f5f0;
+        }
+        .th2{
+            background: #e2dcec;
+        }
+        .table1{
+            background: #b1e9af;
+        }
+        .table2{
+           border: 2px solid black;
+           border-collapse: collapse;
+           background: #e9b9d1;
+        }
+        .table-3{
+            border: 2px solid yellow;
+            border-collapse: separate;
+            border-spacing: 2px;
+            /* border-color: gray; */
+            background: #e0c5e7;
+        }
+        caption{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" class="table1">
+        <tr class="th1">
+            <th>Student Number</th>
+            <th>Roll Number</th>
+            <th>Class</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+           <td>Ali Raza</td>
+           <td>33</td>
+           <td>Third Year</td>
+           <td>2002</td>
+           <td>Male</td>
+        </tr>
+        <tr>
+            <td>Hammad Ali</td>
+            <td>74</td>
+            <td>Second Year</td>
+            <td>2000</td>
+            <td>Male</td>     
+        </tr>
+        <tr>
+            <td>Ahtisham Ashraf</td>
+            <td>13</td>
+            <td>fourth Year</td>
+            <td>2001</td>
+            <td>Male</td> 
+        </tr>
+        
+    </table>
+    <table class="table2" align="center" cellspacing="10px" >
+        <tr class="th2">
+            <th>Student Number</th>
+            <th>Roll Number</th>
+            <th>Class</th>
+            <th>Phone number</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+           <td>Ali Raza</td>
+           <td>33</td>
+           <td>Third Year</td>
+           <td rowspan="2">0432.......</td>
+           <td>Male</td>
+        </tr>
+        <tr>
+            <td>Hammad Ali</td>
+            <td>74</td>
+            <td>Second Year</td>
+            <td>Male</td>     
+        </tr>
+        <tr>
+            <td colspan="5">Example</td>
+        </tr>
+        <tr>
+            <td>Ahtisham Ashraf</td>
+            <td>13</td>
+            <td>fourth Year</td>
+            <td>493208402</td>
+            <td>Male</td> 
+        </tr>
+        
+    </table>
+    <table class="table-3" >
+        <caption>
+            Date Sheet
+        </caption>
+        <tr class="th3">
+        <th>Subject</th>
+        <th>Day</th>
+        <th>timing</th>
+    </tr>
+    <tr>
+        <td>Math</td>
+        <td>12 Feb</td>
+        <td>2:00PM</td>
+    </tr>
+    <tr>
+        <td>phsics</td>
+        <td>15 Feb</td>
+        <td>5:00PM</td>
+    </tr>
+    </table>
+</body>
+</html>
