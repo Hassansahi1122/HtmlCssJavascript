@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="second.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main" onmouseover="changeOtherClasses(true)" onmouseout="changeOtherClasses(false)">
+        <div class="child1 same">Header</div>
+        <div class="child2 same">Menu</div>
+        <div class="child3 same">Box1</div>
+        <div class="child4 same">Box2</div>
+        <div class="child5 same">Content</div>
+        <div class="child6 same">Sidebar</div>
+        <div class="child7 same">Footer</div>
+    </div>
+    <script>
+        function changeOtherClasses(isHover){
+            const element1 = document.querySelectorAll('.same')
+            element1.forEach(element => {
+                if(isHover){
+                    element.style.background= "#4bfc06";
+                    element.style.border= "2px solid black";
+                    element.style.textAlign= "center";
+                    element.style.fontSize= "60px";
+                    element.style.boxShadow= "inset 10px 10px 20px lightgray ,inset 10px 10px 10px rgb(6, 241, 104),inset -10px -10px 20px lightgray ,inset -10px -10px 10px rgb(6, 241, 104)";
+                    element.style.textShadow= "-1px -1px 2px black,1px 1px 2px black";
+                    element.style.color= "white";
+                }else{
+                    element.style.background= "#06fcf0ec";
+                    element.style.border= "2px solid black";
+                    element.style.textAlign= "left";
+                    element.style.fontSize= "30px";
+                    element.style.boxShadow= "inset 10px 10px 20px lightgray ,inset 10px 10px 10px rgb(6, 241, 104),inset -10px -10px 20px lightgray ,inset -10px -10px 10px rgb(6, 241, 104)";
+                    element.style.textShadow= "-1px -1px 2px black,1px 1px 2px black";
+                    element.style.color= "black";
+                }
+            }); 
+            let element
+       }
+ 
+            
+ 
+    </script>
+</body>
+</html>
