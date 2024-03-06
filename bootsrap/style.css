@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+}
+.container{
+  background: #7532f9;
+  width: 100vw;
+  height: 64px;
+    display: flex;
+    flex-direction: row;
+   padding: 10px;
+   align-content: center;
+   align-items: center;
+   box-sizing: border-box;
+   justify-content: space-around;
+}
+.body{
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(90deg,#00ffff,#ff00c3,yellow);
+}
+.logo{
+  margin-left: 20px;
+
+}
+.nav-bar{
+  list-style: none;
+  display: flex;
+ color: white;
+ font-size: large;
+}
+.nav-bar > li{
+  padding: 10px;
+}
+.nav-bar3{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar3 > li {
+  padding: 10px;
+}
+.nav-search{
+  display: flex;
+  list-style: none;
+  width: 40%;
+  
+}
+.form1{
+  width: 300px;
+  box-sizing: border-box;
+  margin-left: 4%;
+}
+.one>a{
+ text-decoration:none ;
+ color: white;
+}
+.nav-bar4{
+  list-style: none;
+  display: flex;
+  width: 15%;
+height: 80%;
+}
+.nav-bar4 > li{
+  padding: 10px;
+}
+#version{
+ opacity: 0.7;
+  border: transparent;
+  background: transparent;
+ 
+}
+.version{
+ opacity: 0.5;
+ border:1px solid wheat;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+#version:focus{
+  border: transparent;
+  outline: none;
+}
+#list{
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  list-style: none;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 8px 20px 8px;
+  border-radius: 15px;
+  display: none;
+}
+#list > li{
+  padding: 2px;
+width: 100%;
+text-align: center;
+}
+#list > li:hover{
+  color: white;
+  background: aqua;
+}
+/* css about search */
+form {
+  flex-shrink: inherit;
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    opacity: 0.7;
+    align-self: center;
+  }
+  input[type=search] {
+      box-sizing: border-box;
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 6px 2px 6px 40px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    cursor: pointer;
+    width: 85%;
+    outline: none;
+  }
+  button[type=submit] {
+    margin: 5px 3px 5px 0;
+    border: 1px solid;
+    border-radius: inherit;
+    opacity: 0.7;
+    cursor: pointer;
+    font-size:x-small;
+    background: transparent;
+    background: darkblue;
+  }
+  form:hover {
+      box-shadow: 0 0 50px 0 #d3d611;
+    border-color: #ccda4f; 
+    background: blue;
+    opacity: 1;
+  }
+  form >input[type=search]::placeholder{
+    font-size: larger;
+    color: white;
+}
+  form:hover >input[type=search]::placeholder{
+      color: azure;
+  }
+  

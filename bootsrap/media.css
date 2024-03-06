@@ -1,0 +1,55 @@
+@media screen and (max-width : 480px) {
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+}    
+.body{
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(90deg,#00ffff,#ff00c3,yellow);
+  }
+  .container{
+    background: #7532f9;
+    width: 100vw;
+    height: 64px;
+      display: flex;
+      flex-direction: row;
+     padding: 10px;
+     align-content: center;
+     align-items: center;
+     box-sizing: border-box;
+  }
+ /* Style for the container */
+ .dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  /* Style for the dots */
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #333;
+    margin: 0 5px; /* Adjust as needed */
+    animation: bounce 1s infinite alternate; /* Animation */
+  }
+
+
+@keyframes bounce {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5px); /* Adjust the distance */
+    }
+  }
+}
