@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+ <div class="pop" id="pop">
+    <div class="pop-content">
+        <div class="pop-head">
+        <h2 class="Cinfo">Competitor Information</h2>
+        <span class="close">&times;</span>
+    </div>
+        <form class="information">
+            <div class="inf-1st">
+                <div class="fplayer">
+                <label for="Firstplayer" class="l1st">1stplayer</label>
+                <input type="text" id="Firstplayer" name="Firstplayer" autocomplete="off" required>
+            </div>
+                <ul class="select-box">
+                <span class="select">Select</span>
+                <ul class="list">
+                    <li><span class="x ite">X</span>Cross <button class="cross btn"></button></li>
+                    <li><span class="o ite">O</span>Zero <button class="zero btn"></button></li>
+                </ul>
+            </ul>
+            </div>
+            <div class="inf-1st">
+            <div class="splayer">
+                <label for="secondplayer" class="l2nd">2ndplayer</label>
+                <input type="text" id="Secondplayer" name="secondplayer" class="sp" autocomplete="off" required>
+            </div>
+            <span class="select1">Select</span>
+            </div>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</div> 
+<div class="info-main">
+<div class="winerdiv disable">
+    <h3 id="resul">
+        <span id="span1"></span>
+        <span>Result</span>
+    </h3>
+    <p id="winerpara">The winner is : <span id="name"></span></p>
+    
+    <div class="overtryagain" >
+        <p id="over">Game is over :</p>
+    <button id="newbtn">TryAgain</button>
+    or
+    <button id="continue">Continue</button>
+</div>  
+</div>
+</div>
+
+   <div class="gamediv">
+    <div class="history">
+        <div class="competitor1st">
+        <div class="player1st">player1st : <span class="player1stname"></span></div>
+        <div class="player1stwinningpoint"> Winner    : <span class="player1stwingame">0</span></div>
+        </div>
+        <div class="competitor1st">
+        <div class="player2nd">player2nd : <span class="player2ndname"></span></div>
+        <div class="player2ndwinningpoint"> Winner    : <span class="player2ndwingame">0</span></div>
+        </div>
+        <div class="screen__background">
+            <span class="screen__background__shape screen__background__shape1"></span>
+            <span class="screen__background__shape screen__background__shape2"></span>
+            <span class="screen__background__shape screen__background__shape3"></span>
+            <span class="screen__background__shape screen__background__shape4"></span>
+            <span class="screen__background__shape screen__background__shape5"></span>
+            <span class="screen__background__shape screen__background__shape6"></span>
+        </div>
+   </div>
+
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="Tic-Tac">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <button id="btnReset">Reset</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
