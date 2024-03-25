@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen  and (max-width : 1399px) and (min-width : 1218px)" href="./css/media.css">
+    <link rel="stylesheet" media="screen  and (max-width : 1217px) and (min-width : 992px)" href="./css/media1.css">
+    <link rel="stylesheet" media="screen  and (max-width : 991px) and (min-width : 565px)" href="./css/media2.css">
+    <link rel="stylesheet" media="only screen  and (max-width : 564px) and (min-width: 255px)" href="./css/media3.css">
+   <link rel="stylesheet" media="screen  and (max-width : 254px) and (min-width : 170px)" href="./css/media4.css">
+    <link rel="stylesheet" media="screen  and (max-width : 169px) and (min-width : 90px)" href="./css/media5.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<body>
+  <div class="main-container-pricing">
+
+    <header id="header">
+       <nav class="grid-container">
+
+          <!-- Bootstrap logo -->
+           <div class="logo"><a href="http://getbootstrap.com" target="_blank" class="a-logo"><img src="./pic/iconboot.png" alt="pic" class="image-logo"  width="40px"></a></li></div>
+
+             <!-- Search  -->
+             <ul class="nav-search">
+              <li>
+                <button class="search-form">
+                  <i class="fa fa-search iconsearch" style="font-size:16px; text-align: center;"></i><input class="search-input"  type="search" placeholder="Search" readonly>
+                        <input class="search-button" type="button" value="CTRL K">
+                  </button>
+              </li>
+             </ul>
+                   
+        <ul class="grid-5items">
+
+                                                    <!-- Docs  -->
+                  <li class="docs one"><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Docs</a></li>
+                       <!-- Examples  -->
+                  <li class="example one"><a href="https://getbootstrap.com/docs/5.3/examples/" target="_blank">Examples</a></li>
+                  <!-- Icons  -->
+                  <li class="icons one"><a href="https://icons.getbootstrap.com/" target="_blank">Icons</a></li>
+                  <!-- Themes  -->
+                  <li class="themes one"><a href="https://themes.getbootstrap.com/" target="_blank">Themes</a></li>
+                  <!-- Blogs  -->
+                  <li class="blog one"><a href="https://blog.getbootstrap.com/" target="_blank">Blog</a></li>
+        </ul>
+
+            
+       <ul class="grid-3contact">
+
+                              <!-- Github  -->
+                <li class="github common"><a href="https://github.com/Hassansahi1122"><img src="./pic/R.png" alt="github " width="25px"></a><span class="hidden">Github</span></li>
+      
+                <!-- twitter  -->
+                <li class="twitter common"><a href="https://twitter.com/bootstrap"><img src="./pic/twitter1.png" alt="tiwtter" width="25px"></a><span class="hidden">Twitter</span></li>
+      
+                <!-- opencollective  -->
+                <li class="opencollective common"><a href="https://opencollective.com/bootstrap"><img src="./pic/open-collective-logo.png" alt="opencollective" width="25px"></a><span class="hidden">Opencollective</span></li>
+       </ul>
+
+
+       <ul class="grid-version-bright">
+
+        <li class="version-select">
+          <div class="selected-version">
+            <span>V 1.0</span>
+            <i class="fa fa-caret-down" aria-hidden="true" ></i>
+          </div>
+          <ul class="version-list">
+            <li>V 1.0 <button class="tick-button"></button></li>
+            <li>V 1.1 <button class="tick-button"></button></li>
+            <li>V 2.0 <button class="tick-button"></button></li>
+            <li>V 2.1 <button class="tick-button"></button></li>
+          </ul>
+        </li>
+
+          <li class="brightness-select">
+        <div class="selected-brightness">
+            <i class="fa fa-sun-o"></i>
+          <i class="fa fa-caret-down" aria-hidden="true" ></i>
+        </div>
+        <ul class="brightness-list">
+            <li data-value="light" class="active"><i class="fa fa-sun-o brighticon"></i> Light<button class="tick-button"></button></li>
+            <li data-value="dark"><i class="fa fa-moon-o brighticon" ></i> Dark<button class="tick-button"></button></li>
+            <li data-value="auto"><i class="fa fa-lightbulb-o brighticon"></i> Auto<button class="tick-button"></button></li>
+          </ul>
+      </li>
+
+       </ul>
+       <div class="combine-container">
+        <div class="three-dots">&#8226;&#8226;&#8226;</div>
+        <div class="combine-list">
+          <div class="firstrowlist"><span class="bootstrapname">Bootstrap</span><div class="cross-button">X</div></div>
+        </div>
+      </div>
+     </nav>
+    </header>
+      
+    <div class="background-pricing"></div>
+    <div id="popup-price" class="popup-price">
+      <div class="popup-content-price">
+        <span class="close-price" onclick="crossclose()">&times;</span>
+        <p>Hover over image to view details</p>
+      </div>
+    </div>
+    <section id="pricing">
+      <div class="grid-container-table-price">
+        <div class="prici">Class Pricing</div>
+        <div class="each-price td1">
+          <img src="pic/image/gymnast.jpg" alt="Gymnastics" class="big">
+          <div class="information-class">
+            <h4>Gymnastics</h4>
+            <p>Gymnastic is a sport that combines strength, flexibilty, agility, and grace, involving various apparatus and floor exercises.</p>
+            <h5> $50.99</h5>
+          </div>
+        </div>
+        <div class="each-price td2">
+          <img src="pic/image/backflip.jpg" alt="Back flip" class="big">
+          <div class="information-class">
+            <h4>Back flip</h4>
+            <p>Back flip is gymnastics and acrobatic maneuver.</p>
+            <h5> $10.99</h5>
+          </div>
+        </div>
+        <div class="each-price td3">
+          <img src="pic/image/pullupstunt.jpg" alt="Pullup" class="big">
+                <div class="information-class">
+                  <h4>Pullup</h4>
+                  <p>Pull up involves lifting one's body weigth by pulling up on a horizational bar using the arms and upper body strength.</p>
+                  <h5> $11.99</h5>
+                </div>
+        </div>
+        <div class="each-price td4">
+          <img src="pic/image/cardio.jpg" alt="Cardio Blast" class="big">
+          <div class="information-class">
+            <h4>Cardio Blast</h4>
+            <p>Cardio Blast is a high intensity cardiovascular workout aimed at improving fitness and burning calories through fast paced exercises.</p>
+            <h5> $59.99</h5>
+          </div>
+        </div>
+        <div class="each-price td5">
+          <img src="pic/image/spli2t.jpg" alt="Split" class="big">
+                <div class="information-class">
+                  <h4>Split</h4>
+                  <p>Split is a stretching exercise in which the legs are extended in opposite directions, typically performed to improve flexibilty.</p>
+                  <h5> $15.99</h5>
+                </div>
+        </div>
+        <div class="each-price td6">
+          <img src="pic/image/pullupstunt1.jpg" alt="Parkour" class="big">
+          <div class="information-class">
+            <h4>Pullup Stunt</h4>
+            <p>Pull up stunt involves lifting one's body weigth by pulling up on a horizational bar using the arms and upper body strength with different position.</p>
+            <h5> $19.99</h5>
+          </div>
+        </div>
+        <div class="each-price td7">
+          <img src="pic/image/parkour3.jpg" alt="Parkour" class="big">
+          <div class="information-class">
+            <h4>Parkour</h4>
+            <p>Parkour is a athletic discipline that involves moving rapidly through an urban environment by negotiating obstacles by running, jumping and climbing.</p>
+            <h5> $65.99</h5>
+          </div>
+        </div>
+        <div class="each-price td8">
+          <img src="pic/image/yoga2.jpg" alt="Yoga" class="big">
+          <div class="information-class">
+            <h4>Yoga</h4>
+            <p>Yoga is a holistic pratice that combines physical postures, breathing techniques, and meditation to promato physical, mental, and spirtual well being.</p>
+            <h5> $20.99</h5>
+          </div>
+        </div>
+        <div class="each-price td9">
+          <img src="pic/image/stregth.jpg" alt="Strength Training" class="big">
+          <div class="information-class">
+            <h4>Strength Training</h4>
+            <p>Strength Training involves exercises that focus on building muscle mass, strength, and endurance through resistence and weightlifting tecqniues.</p>
+            <h5> $22.99</h5>
+          </div>
+        </div>
+        <div class="each-price td10">
+          <img src="pic/image/stretching6.jpg" alt="Stretching" class="big">
+          <div class="information-class">
+            <h4>Stretching</h4>
+            <p>Stretching is a practice that involves lengthening and elongating muscle to improve flexibilibty, mobility, and range of motion .</p>
+            <h5> $24.99</h5>
+          </div>
+        </div>
+      </div>
+      </section>
+  
+    <footer>
+      <p>&copy; 2023 My Gym. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+
+
+
+
+
+
+
+    
+       <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+        

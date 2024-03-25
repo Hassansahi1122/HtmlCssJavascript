@@ -1,0 +1,40 @@
+.popup-price{
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0px;
+    width: 70px;
+    background-color: #06f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    animation: slidein 10s forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.popup-content-price{
+    text-align: center;
+    padding:10px 0px 10px 0px ;
+    background: #e60475;
+    color: #fff;
+    font-size: 18px;
+}
+.close-price{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+@keyframes slidein {
+    from{
+       top: 0;
+
+    }
+    to{
+        top: 100%;
+    }
+    
+}
