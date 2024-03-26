@@ -144,15 +144,19 @@ for(let pattern of winpattern){
    let position1 = boxes[pattern[0]].innerText;
    let position2 = boxes[pattern[1]].innerText;
    let position3 = boxes[pattern[2]].innerText;
-   console.log(position1,position2,position3);
+   console.log("count is " + count);
    if(position1!=="" && position2!=="" && position3!==""){
     if(position1==position2 && position2==position3){
         displaywinner(position1);
-    } else if(count==9)
+    } else if(count==9 && (position1!==position2 || position2!==position3))
     {
-     winertext.innerText = "Both loser: ";
-     over.innerText = "The Game is over";
+        if ((position2==position3 || position2!=position3) && (position2==position1 || position2!=position1)) {
+        console.log(position1 +" "+position2+""+position3 );
+     winertext.innerText = "Both loser : " +person1+" "+person2;
+     infomain.style.display = "block";
      winnerdiv.classList.remove("disable");
+     count=0;
+        }
     }
    }
 }
