@@ -50,7 +50,7 @@ header{
  margin: auto;
  }
  .grid-5items{
-  display: grid;
+  display: none;
   background: transparent;
   height: 20rem;
   padding: 10px;
@@ -91,7 +91,7 @@ header{
 }
 
 .grid-3contact{
-  display: grid;
+  display: none;
   background: transparent;
   padding: 10px;
   grid-template-columns: repeat(2,1fr);
@@ -126,6 +126,7 @@ header{
   align-items: center;
  padding: 2px;
  color: #fff;
+ cursor: pointer;
 }
  .combine-list {
   box-sizing: border-box;
@@ -185,7 +186,7 @@ header{
   }
   /* version brigness  */
   .grid-version-bright{
-    display: flex;
+    display: none;
     flex-direction: column;
     max-width: 25rem;
   }
@@ -195,7 +196,7 @@ header{
 /* select version  */
 .version-select {
   display: flex;
-  justify-content: left;
+  align-items: center;
   border: transparent;
   border-bottom: 0.1px solid rgb(151, 122, 230);
   width: 100%;
@@ -211,9 +212,16 @@ header{
 .selected-version {
   color: white;
   border: transparent;
- display: inline;
- padding: 10px 0px;
+  /* margin: auto; */
+ /* display: inline; */
+ /* padding: 10px 0px; */
+ width: fit-content;
+text-align: left;
 }
+.version-list {
+  display: none;
+  margin-top: 40px; 
+  }
 
 
 /* brightness select  */
@@ -241,7 +249,7 @@ header{
 .navigym{
   margin-top: 140px;
   font-size: 25px;
-  height: 370px;
+  height: 470px;
 }
 
 /* Hero section styles */
@@ -262,7 +270,12 @@ margin-top: 140px;
 .hero-content p {
   font-size: 22px;
 }
-
+.btn {
+  font-size: 14px;
+}
+.btn:hover{
+  font-size: 15;
+}
 
 /* Contact section styles */
 #contact {

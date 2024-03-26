@@ -61,8 +61,9 @@ brightnessItems.forEach(function(item) {
 brightnessItems[0].classList.add("active");
 brightnessItems[0].querySelector("button.tick-button").classList.add("clicked");
 
-
-
+grid_version_bright.style.display = "flex";
+items5.style.display = "flex";
+contact3.style.display = "flex";
 
   function widthapplyer (){
    
@@ -72,12 +73,8 @@ if(mediaquery.matches){
   selectedVersion.innerHTML = `<span class="versionboot">Bootsatrap</span>${listItems[0].textContent} <i class="fa fa-caret-down" aria-hidden="true" ></i>`;
 
   // Tick the "Light" item by default
-  selectedBrightness.innerHTML = `<i class="${brightnessItems[0].firstChild.    className}"></i><i class="fa fa-caret-down"></i>`;
+  // selectedBrightness.innerHTML = `<i class="${brightnessItems[0].firstChild.className}"></i><i class="fa fa-caret-down"></i>`;
   
-  //  gridgrid_container.removeChild(items5);
-  //   gridgrid_container.removeChild(contact3);
-  //  gridgrid_container.removeChild(grid_version_bright);
-
   combineList.appendChild(items5);
   combineList.appendChild(contact3);
   combineList.appendChild(grid_version_bright);
@@ -87,24 +84,37 @@ if(mediaquery.matches){
   
     threeDots.addEventListener("click", function() {
       combineList.style.display = "flex";
+      grid_version_bright.style.display = "flex";
+      items5.style.display = "grid";
+      contact3.style.display = "grid";
     });
   
     crossButton.addEventListener("click", function() {
       combineList.style.display = "none";
+      grid_version_bright.style.display = "none";
+      items5.style.display = "none";
+      contact3.style.display = "none";
     });
   
     document.addEventListener("click", function(event) {
       if (!combineList.contains(event.target) && !threeDots.contains(event.target)) {
         combineList.style.display = "none";
+        // grid_version_bright.style.display = "none";
+        // items5.style.display = "none";
+        // contact3.style.display = "none";
       }
     });
 }else{
+  grid_version_bright.style.display = "flex";
+items5.style.display = "flex";
+contact3.style.display = "flex";
     logo.after(items5);
     gridgrid_container.appendChild(contact3);
    gridgrid_container.appendChild(grid_version_bright);
   selectedVersion.innerHTML = `${listItems[0].textContent} <i class="fa fa-caret-down" aria-hidden="true" ></i>`;
+  console.log("happy");
   // Tick the "Light" item by default
-  selectedBrightness.innerHTML = `<i class="${brightnessItems[0].firstChild.className}"></i><i class="fa fa-caret-down"></i>`;
+  // selectedBrightness.innerHTML = `<i class="${brightnessItems[0].firstChild.className}"></i><i class="fa fa-caret-down"></i>`;
 }
 }
 

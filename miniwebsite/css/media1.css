@@ -25,8 +25,13 @@
       height: 38px;
       width: 200px;
     }
+    .search-input[type=search] {
+      padding: 6px 30px 6px 2px;
+      font-size: 16px;
+      font-weight: 600;
+    }
     .nav-search{
-      width:250px;
+      width:230px;
       }
   .navigym{
     max-width:304.25px;

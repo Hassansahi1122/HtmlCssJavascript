@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: 'playfair';
+  src: url(../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Fredoka';
+  src: url(../fonts/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -10,13 +20,13 @@
     grid-template-columns: repeat(4,1fr);
   }
   .background{
-    background-image: url('./pic/image/background.jpg');
+    background-image: url('../pic/image/background.jpg');
     background-size:cover;
     object-fit: cover;
     background-position:top center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 140vh;
+    height: 150vh;
     z-index: -1;
     grid-area: 2/1/5/5;
   }
@@ -27,6 +37,7 @@
     height: 4rem;
     padding: 0px 35px;
     display: flex;
+    font-family: Montserrat,playfair;
   }
   .grid-container{
    box-sizing: border-box;
@@ -60,8 +71,7 @@
    color: white;
    font-size: large;
    display: flex;
-   font-size: 1.1rem;
-   font-weight: 10px;
+   font-size: 1rem;
    font-weight: 700;
    margin: auto;
    margin-left: 0px;
@@ -69,7 +79,7 @@
   .one>a{
    text-decoration:none ;
    color: white;
-   opacity: 0.6;
+   opacity: 0.8;
   }
   .one > a:hover{
   opacity: 1;
@@ -80,12 +90,14 @@
   
   .combine-container{
   display:none;
+  cursor: pointer;
   }
                              /* grid-3contact github twitter opencollective */
   .grid-3contact{
   list-style: none;
   display: flex;
   margin: auto;
+  margin-right: 3px;
   }
   .grid-3contact > li {
   padding: 0px 20px;
@@ -95,7 +107,7 @@
   }
 
   .github ,.opencollective , .twitter{
-  opacity: 0.6;
+  opacity: 0.8;
   }
  
   .common:hover{
@@ -104,7 +116,7 @@
 
   /* search bar  */
   .nav-search{
-    width:500px;
+    width:450px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -135,7 +147,9 @@
       border-radius: inherit;
       width: 85%;
       outline: none;
+      font-weight: 700;
       cursor: pointer;
+      font-family: Montserrat;
     }
     .iconsearch {
       padding: 7px;
@@ -144,6 +158,7 @@
       cursor: pointer;
       background: transparent;
       border: transparent;
+      margin: auto;
     }
     .search-button {
       border: 1px solid;
@@ -226,6 +241,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 25px; 
   left: 0;
+  /* top: 300; */
   animation: expandList 0.3s forwards;
   text-align: left;
   }
@@ -405,12 +421,13 @@
     background: rgba(228, 203, 203, 0.3);
     color: rgb(15, 15, 15);
     font-size: 6vmin;
-    font-weight: bold;
-    padding: 5px;
-    padding-top: 25px;
-    height: 70%px;
-    margin: 300px 10px 0px 0px;
+    font-weight: 600;
+    padding: 0px;
+    padding-top: 1.4rem;
+    height: 59%;
+    margin: 16rem 0rem 0rem 0rem;
     border-radius: 5px;
+    font-family: poppins;
   }
   .navigym > li {
     padding: 10px;
@@ -444,7 +461,8 @@
     text-align: center;
     justify-content: center;
     color: white;
-    margin: 300px 10px 0px 0px;
+    margin: 16rem 0rem 0rem 0rem;
+    font-family: Montserrat;
   }
   
   .hero-content {
@@ -452,14 +470,14 @@
   }
   
   .hero-content h1 {
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     font-weight: bolder;
     margin-bottom: 20px;
   }
   
   .hero-content p {
     text-align: center;
-    font-size: 2vmax;
+    font-size: 1.8vmax;
     font-weight: bolder;
     margin-bottom: 30px;
   }
@@ -491,6 +509,7 @@
    justify-content:center;
    text-align: center;
    height: 25rem;
+   font-family: poppins;
   }
   
   #contact h2 {
@@ -518,6 +537,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     outline: none;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    font-family: poppins, Fredoka;
   }
   #form-contact > textarea:hover,#input-contact:hover{
     background: rgb(107, 236, 2);
@@ -540,6 +560,7 @@
     box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     border: none;
     outline: none;
+    font-family: poppins, Fredoka;
   }
   
   .send {
@@ -551,7 +572,6 @@
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
-  
   }
   .send:hover{
     background-color: rgba(4, 231, 220, 0.89);
@@ -568,6 +588,7 @@
     text-align: center;
     padding: 35px;
     font-size: 25px;
+    font-family: Montserrat;
   }
   
   /* Classes section styles */
@@ -580,7 +601,7 @@
   }
   
   .background-classes{
-    background-image: url('./pic/image/light6.jpg');
+    background-image: url('../pic/image/light6.jpg');
     background-size:cover;
     object-fit: contain;
     background-position:center center;
@@ -606,6 +627,7 @@
   }
   
   .classes-heading {
+    font-family: poppins;
     color: rgb(253, 239, 34);
     font-size: 8vmin;
     margin-bottom: 30px;
@@ -627,6 +649,7 @@
   }
   
   .class h3 {
+    font-family: poppins;
     margin-top: 10px;
     font-size: 4vmin;
   }
@@ -640,6 +663,7 @@
     margin-top: 5px;
     font-size: 3vmin;
     font-weight: bolder;
+    font-family: poppins;
   }
   
   
@@ -653,7 +677,7 @@
   }
   
   .background-about{
-    background-image: url('./pic/image/light4.jpg');
+    background-image: url('../pic/image/light4.jpg');
     background-size:cover;
     object-fit: contain;
     background-position:center center;
@@ -672,18 +696,19 @@
     align-items: center;
     align-content: center;
     padding: 20px 180px;
+    font-family: poppins;
   }
   
   #about h2 {
     color: rgb(235, 8, 38);
-    font-size: 8vmin;
+    font-size: 6vmin;
     margin-bottom: 20px;
     text-align: center;
   }
   #about p{
     color: rgb(255, 0, 85);
     font-weight: bolder;
-    font-size: 3vmin;
+    font-size: 2.5vmin;
   }
   
   /* //////////////////////
@@ -698,7 +723,7 @@
   }
   
   .background-pricing{
-    background-image: url('./pic/image/nature.jpg');
+    background-image: url('../pic/image/nature.jpg');
     background-size:cover;
     object-fit: contain;
     background-position:center center;
@@ -713,9 +738,13 @@
   
   .each-price {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       overflow: hidden;
       -webkit-box-shadow: 0 0 10px #ccc;
       box-shadow: 0 0 10px #ccc;
+      font-family: poppins;
   }
   
   .information-class {
@@ -732,7 +761,8 @@
   }
   .information-class h4{
       color: #ffffff;
-      font-size: 16px;
+      font-size: 17px;
+      margin-bottom: 0.5rem;
       font-weight: 500;
       font-family: 'Rubik', sans-serif;
   }
@@ -780,9 +810,12 @@
     padding: 20px;
     text-align: center;
     font-size: 25px;
+    font-family: poppins;
     border: 1px #000 solid;
   }
-  
+ 
+ 
+
   .each-price {
     display: flex;
     align-items: center;
@@ -814,7 +847,7 @@
   }
   
   .background-schedule{
-    background-image: url('./pic/image/light2.jpg');
+    background-image: url('../pic/image/light2.jpg');
     background-size:cover;
     object-fit: contain;
     background-position:center center;
@@ -824,22 +857,21 @@
     grid-area: 2/1/6/5;
   }
   #schedule {
-    grid-area: 2/1/5/5;
+    grid-area: 2/1/6/5;
     border: #000;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 0px auto 400px auto;
-    width: 70vmax;
-    height: 60vmax;
+    align-items: center;
+    font-family: poppins;
+    width: 50rem;
+    height: 40rem;
+    margin: auto;
   }
   .schedule-div{
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    /* height: 90%; */
+    margin:auto;
   }
   #schedule h2 {
     font-size: 36px;
@@ -847,8 +879,7 @@
     color: #eef0de;
   }
   .schedule-table {
-    margin: auto;
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -896,7 +927,7 @@
   }
   
   .background-upload{
-    background-image: url('./pic/image/nature.jpg');
+    background-image: url('../pic/image/nature.jpg');
     background-size:cover;
     object-fit: contain;
     background-position:center center;
@@ -923,6 +954,7 @@
     margin: auto;
     width: 700px;
     height: 500px;
+    font-family: poppins;
   }
   .formup > h2{
     text-align: center;
