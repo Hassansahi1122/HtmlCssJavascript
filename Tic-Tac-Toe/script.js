@@ -7,10 +7,13 @@ const queryall = (vari) => {
 const query = (vari) => {
   return document.querySelector(vari);
 };
-
+// for get nodelist of all boxes
 let boxes = queryall(".box");
+// get node of reset button 
 let btnReset = query("#btnReset");
+// get node of new button 
 let newBtn = query("#newbtn");
+// get node of continue button 
 let continu = query("#continue");
 let showstatement = query("#show_result");
 let winnerdiv = query(".winerdiv");
@@ -26,14 +29,18 @@ let pop = query(".pop");
 let gamediv = query(".gamediv");
 let infomain = query(".info-main");
 let namewiner = query("#name");
+// Get players name Section
 let player1stname = query(".player1stname");
 let player2ndname = query(".player2ndname");
+// Get Players Score Section
 let player1stwingame = query(".player1stwingame");
 let player2ndwingame = query(".player2ndwingame");
+// count the score of both players
 let winningpoint1st = 0;
 let winningpoint2nd = 0;
 let O;
 let getotruefalse = false;
+// for check number of click box
 let count = 0;
 
 // Display will be block of Competiter Information when the DOM content mean page is fully loaded
